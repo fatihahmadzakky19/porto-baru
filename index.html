@@ -978,39 +978,41 @@
         </a>
        </div>
        <div class="contact-form-wrapper reveal">
-        <form class="contact-form" id="contactForm">
-         <div class="form-group">
-          <label class="form-label" for="name">
-           Nama
-          </label>
-          <input class="form-input" id="name" name="name" placeholder="Masukkan nama Anda" required="" type="text"/>
-         </div>
-         <div class="form-group">
-          <label class="form-label" for="email">
-           Email
-          </label>
-          <input class="form-input" id="email" name="email" placeholder="email@example.com" required="" type="email"/>
-         </div>
-         <div class="form-group">
-          <label class="form-label" for="subject">
-           Subjek
-          </label>
-          <input class="form-input" id="subject" name="subject" placeholder="Subjek pesan" required="" type="text"/>
-         </div>
-         <div class="form-group">
-          <label class="form-label" for="message">
-           Pesan
-          </label>
-          <textarea class="form-textarea" id="message" name="message" placeholder="Tulis pesan Anda di sini..." required="" rows="5"></textarea>
-         </div>
-         <button class="btn btn-primary btn-submit" type="submit">
-          <span>
-           Kirim Pesan
-          </span>
-          <i class="fas fa-paper-plane">
-          </i>
-         </button>
-        </form>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/fatihahmadzakky19@example.com" method="POST">
+    <!-- Konfigurasi FormSubmit -->
+    <input type="hidden" name="_subject" value="Pesan Baru dari Portfolio!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://porto-baru-8yd4.vercel.app/?sent=true">
+    
+    <!-- Honeypot untuk anti-spam -->
+    <input type="text" name="_honey" style="display:none">
+    
+    <div class="form-group">
+        <label for="name" class="form-label">Nama</label>
+        <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="email@example.com" required>
+    </div>
+
+    <div class="form-group">
+        <label for="subject" class="form-label">Subjek</label>
+        <input type="text" id="subject" name="subject" class="form-input" placeholder="Subjek pesan" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message" class="form-label">Pesan</label>
+        <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-submit">
+        <span>Kirim Pesan</span>
+        <i class="fas fa-paper-plane"></i>
+    </button>
+</form>
        </div>
       </div>
      </div>
